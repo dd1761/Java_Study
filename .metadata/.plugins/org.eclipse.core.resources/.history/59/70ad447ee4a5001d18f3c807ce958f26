@@ -1,0 +1,14 @@
+package array;
+
+public class Array02 {
+
+	public static void main(String[] args) {
+		String[] ar = {"호랑이", "사자", "코끼리", "기린", "하이애나", "긴팔원숭이", "뱀"};
+		
+		for(int i = 0; i < ar.length; i++) {	//for
+			
+		}
+
+	}
+
+}

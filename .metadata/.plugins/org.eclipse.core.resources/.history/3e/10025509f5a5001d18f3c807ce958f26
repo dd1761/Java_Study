@@ -1,0 +1,83 @@
+package array;
+
+import java.util.Scanner;
+
+public class Array04 {
+
+	public static void main(String[] args) {
+		while(true) {
+			int num;
+			boolean[] ar = new boolean[5];
+			
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("주차장 관리 프로그램");
+			System.out.println("**************");
+			System.out.println("  1.입차");
+			System.out.println("  2.출차");
+			System.out.println("  3.리스트");
+			System.out.println("  4.종료");
+			System.out.print("메뉴 : ");
+			num = scanner.nextInt();
+			
+			if(num == 1) {
+				System.out.println("위치 입력 : ");
+				int n = scanner.nextInt();
+				if(ar[n] == true) {
+					System.out.println(place + "위치에 주차" + "\t이미 주차되어 있습니다.");
+				}
+				if(ar[n - 1] == false) {
+					System.out.println(place + "위치에 주차" + "\t 주차되어있지 않습니다.");
+					ar[n - 1] = true;
+				}
+				
+			}
+			if(num == 2) {
+				System.out.println("위치 입력 : ");
+			}
+			if(num == 3) {
+				for(int i = 0; i < ar.length; i++) {
+					System.out.println((i + 1) +"번 위치"+ar[i]);
+				}
+			}
+			if(num == 4) {
+				System.out.println("프로그램을 종료합니다.");
+				break;
+			}
+			
+		}
+		
+	}	
+		
+}
+
+
+
+/*
+[문제] 주차관리 프로그램
+
+[실행결과]
+주차장 관리 프로그램
+**************
+   1. 입차
+   2. 출차
+   3. 리스트
+   4. 종료
+**************
+  메뉴 : 
+  
+1번인 경우
+위치 입력 : 3
+3위치에 입차 / 이미 주차되어있습니다
+
+2번인 경우
+위치 입력 : 4
+4위치에 출차 / 주차되어 있지않습니다
+
+3번인 경우
+1위치 : true
+2위치 : false
+3위치 : true
+4위치 : false
+5위치 : false  
+
+*/

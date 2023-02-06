@@ -1,0 +1,21 @@
+package while_;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+		int a = 0;
+		do {
+			a++;
+			System.out.print(a + " ");
+		}while(a < 10);
+
+		System.out.println();
+		
+		char ch = 'A';
+		do {
+			System.out.println(ch + " ");
+			ch++;
+		}while( ch <= 'Z');
+	}
+
+}
