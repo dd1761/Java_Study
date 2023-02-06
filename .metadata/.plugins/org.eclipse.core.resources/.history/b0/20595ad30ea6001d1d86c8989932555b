@@ -24,7 +24,7 @@ public class Array05 {
 		    System.out.println((char)(i + 'A') + ": " + count[i] + "개"); // 0 + 65
 		}
 		
-		// //
+		//
 
 	}
 
