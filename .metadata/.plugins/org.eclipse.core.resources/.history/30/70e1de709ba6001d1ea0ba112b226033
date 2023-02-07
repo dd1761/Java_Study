@@ -1,0 +1,65 @@
+package array;
+
+public class Lotto {
+
+	public static void main(String[] args) {
+		int[] lotto;
+		lotto = new int[6];
+		
+		for(int i = 0; i < lotto.length; i++) {
+			lotto[i] = (int)(Math.random() * 45 + 1);
+			
+			//중복체크
+			for(int j = 0; j<i; j++) {
+				if(lotto[i] == lotto[j]) {
+					lotto[i] = (int)(Math.random() * 45 + 1);
+					break;
+				}
+			}
+		}
+		int temp;
+		for (int i = 0; i < lotto.length - 1; i++) {
+			for (int j = i + 1; j < lotto.length; j++) {
+				if(lotto[i] > lotto[j]) {		// > 오름차순, < 내림차순
+					temp = lotto[i];
+					lotto[i] = lotto[j];
+					lotto[j] = temp;
+					
+				}
+			}
+		}
+		
+		for(int data : lotto) {
+			System.out.print(data + " ");
+		}
+		
+//			System.out.print(lotto[i] + " ");
+//			for(int j = lotto.length - 1; j >= 0; j--) {
+//				if(lotto[i] == lotto[j]) {
+//					lotto[i] = (int) (Math.random() * 45 + 1);
+//				}
+//			}System.out.print(lotto[i] + "\t");
+//			
+//			for(int j =0; j < lotto.length-1; j++ ) {
+//				if(lotto[i] == lotto[j+1]) {		
+//					lotto[i] = (int) (Math.random() * 45 + 1);
+//					
+//				}
+//				
+//			}
+			//System.out.print(lotto[i] + "\t");
+		
+		
+
+	}
+
+}
+
+/*
+[문제] 로또 - 자동
+
+
+
+
+
+*/
