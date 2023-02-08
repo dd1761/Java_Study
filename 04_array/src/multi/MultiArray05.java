@@ -6,26 +6,39 @@ public class MultiArray05 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int cnt;
-		
+		int cnt, subjectCnt;
+		String[] name;
+		String[] subject;
+		int[] jumsu;
 		
 		System.out.print("인원수 입력 : ");
 		cnt = scanner.nextInt();
 		
 		for(int i = 0; i < cnt; i ++) {
-			String[] name = new String[i];
+			name = new String[cnt];
 			
 			System.out.print("이름 입력 : ");
 			name[i] = scanner.next();
 			
 			System.out.print("과목수 입력 : ");
-			int j = scanner.nextInt();
+			subjectCnt = scanner.nextInt();
 			
-			for(int num = 0; num < j; num++) {
-				int[] subjectCnt = new int[j];
+			for(int num = 0; num < subjectCnt; num++) {
+				subject = new String[subjectCnt];
+				System.out.print("과목명 입력 : ");
+				subject[num] = scanner.next();
+				
+				for(int k = 0; k < subjectCnt; k++) {
+					jumsu = new int[subjectCnt];
+					System.out.print(subject[i]+"점수 입력 : ");
+					jumsu[i] = scanner.nextInt(); 
+				}
+			
 			}
 			
 			
+			
+				
 		}
 		
 

@@ -29,7 +29,6 @@ public class BaseBall {
 	loop: while (true) {
 			System.out.print("게임을 실행하시겠습니까(Y/N) ");
 			play = scanner.next();
-			
 			if (play.equals("Y") || play.equals("y")) {
 				System.out.println("게임을 시작합니다.");
 				while (true) {
