@@ -10,32 +10,39 @@ public class MultiArray05 {
 		String[] name;
 		String[] subject;
 		int[] jumsu;
+		int stack = 0;
 		
 		System.out.print("인원수 입력 : ");
 		cnt = scanner.nextInt();
 		
+		name = new String[cnt];		// 만약 인원수 두명이라면 name[2]로 생성
+		
 		for(int i = 0; i < cnt; i ++) {
-			name = new String[cnt];
-			
 			System.out.print("이름 입력 : ");
-			name[i] = scanner.next();
+			name[i] = scanner.next();		// 이름을 입력받아서 name[0]번째 부터 순서대로 이름 삽입.
 			
 			System.out.print("과목수 입력 : ");
 			subjectCnt = scanner.nextInt();
+			subject = new String[subjectCnt];	// 과목수를 입력받아서 과목 수 만큼 과목 배열을생성.
 			
-			for(int num = 0; num < subjectCnt; num++) {
-				subject = new String[subjectCnt];
-				
-				System.out.print("과목명 입력 : ");
-				subject[num] = scanner.next();
+			for(int j = 0; j < subjectCnt; j++) {
+				System.out.print("과목명 입력: ");
+				subject[j] = scanner.next();		// 과목배열에 0번째 부터 과목 수 만큼 과목이름 삽입.	
 			}
-			
-			
-			
-			
-			
-			
-				
+			jumsu = new int[subjectCnt]; 
+			for(int score = 0; score < subjectCnt; score++) {
+				System.out.print(subject[score] + "점수 입력 : ");
+				jumsu[score] = scanner.nextInt();
+				continue;
+			}
+			stack = stack + 1;
+			if(stack == cnt) {
+				for(int j = 0; j < cnt; j++) {
+					for(int k=0; k < subject[j].length(); k++) {
+						System.out.print(subject[j]);
+					}
+				}
+			}
 		}
 		
 		

@@ -35,14 +35,15 @@ public class ComputeMain {
 				
 		}	// for i
 		
-		for(int i = 0; i < count; i++) {
-			System.out.println();
-			System.out.println(ar[i].getX() + "\t"
-					   			+ar[i].getY() + "\t"
-					   			+ar[i].getSum() + "\t"
-					   			+ar[i].getSub() + "\t"
-					   			+ar[i].getMul() + "\t"
-					   			+ar[i].getDiv());
+		//출력
+		System.out.println("X\tY\tSUM\tSUB\tMUL\tDIV");
+		for(Compute data : ar) {
+			System.out.println(data.getX() + "\t"
+					   			+data.getY() + "\t"
+					   			+data.getSum() + "\t"
+					   			+data.getSub() + "\t"
+					   			+data.getMul() + "\t"
+					   			+data.getDiv());
 		}
 		
 	}
