@@ -17,8 +17,8 @@ class Person{
 		name = n;
 		age = a;
 	}
-	
-	public void setData() {
+								// 같은 이름을 사용하는 메소드 Overload / Overloading
+	public void setData() {		
 		
 	}
 	

@@ -25,21 +25,20 @@ public class MultiArray05 {
 			
 			for(int num = 0; num < subjectCnt; num++) {
 				subject = new String[subjectCnt];
+				
 				System.out.print("과목명 입력 : ");
 				subject[num] = scanner.next();
-				
-				for(int k = 0; k < subjectCnt; k++) {
-					jumsu = new int[subjectCnt];
-					System.out.print(subject[i]+"점수 입력 : ");
-					jumsu[i] = scanner.nextInt(); 
-				}
-			
 			}
+			
+			
+			
 			
 			
 			
 				
 		}
+		
+		
 		
 
 	}
