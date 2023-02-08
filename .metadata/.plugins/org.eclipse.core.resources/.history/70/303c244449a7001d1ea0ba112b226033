@@ -39,7 +39,7 @@ public class BaseBall {
 //		}
 
 //		for (int data : com) {
-//			System.out.print(String.format("%3d", data));	//정답확인
+//			System.out.print(String.format("%3d", data));
 //		}
 
 		
