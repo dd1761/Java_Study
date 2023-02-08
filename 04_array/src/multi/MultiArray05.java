@@ -18,7 +18,7 @@ public class MultiArray05 {
 			System.out.print("이름 입력 : ");
 			name[i] = scanner.next();
 			
-			System.out.println("과목수 입력 : ");
+			System.out.print("과목수 입력 : ");
 			int j = scanner.nextInt();
 			
 			for(int num = 0; num < j; num++) {

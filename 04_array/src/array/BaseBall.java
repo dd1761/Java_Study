@@ -45,10 +45,10 @@ public class BaseBall {
 						number = number / 10;
 						for (int j = 0; j < com.length; j++) {
 							if (user[i] == com[j]) {
-								ballstack++;
+								ballstack++;	//같은 값은 가지고 있지만 자리는 다르다.
 							}
 						}
-						if (user[i] == com[i]) {
+						if (user[i] == com[i]) { // 값과 자리까지 같다.
 							strikestack++;
 							ballstack--;
 						}
