@@ -22,9 +22,9 @@ public class StringMain2 {
 			
 			for(int i = 0; i < a.length(); i++) {
 				a.indexOf(0, a.length());
-				if(b.equals(a.indexOf(i,a.length()))) {
+			
 					
-				}
+				
 			}
 			
 		}
