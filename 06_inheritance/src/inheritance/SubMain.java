@@ -4,8 +4,6 @@ public class SubMain extends Super{
 	private String name;
 	private int age;
 	
-	
-	
 	SubMain(){
 		System.out.println("Super 기본 생성자");
 	}
