@@ -22,6 +22,7 @@ class CalendarEx{
 		
 		this.year = year;
 		this.month = month;
+		
 		calc(year, month);
 	    display();
 
@@ -47,17 +48,17 @@ class CalendarEx{
 	
 	public void display() {
 
-        System.out.println("  일   월  화   수   목  금   토");
+        System.out.println("일  월  화  수  목  금  토");
         for (int i = 1; i <= end; i++) {
             if (i == 1) {
                 for (int j = 1; j < dayOfWeek; j++) {
-                    System.out.print("    ");
+                    System.out.print("   ");
                 }
             }
             if (i < 10) {
                 System.out.print(" ");
             }
-            System.out.print(" " + i + " ");
+            System.out.print(i + " ");
             if (dayOfWeek % 7 == 0) {
                 System.out.println();
             }
@@ -66,18 +67,7 @@ class CalendarEx{
         System.out.println();
 
     }
-	
 
-	
-	public int getYear(int year) {
-		return year;
-	}
-	public int getMonth(int month) {
-		return month;
-	}
-	public int[] getMaxDate(int[] maxdate) {
-		return maxdate;
-	}
 }
 
 public class CalendarMain {
