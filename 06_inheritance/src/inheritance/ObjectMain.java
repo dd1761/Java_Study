@@ -92,7 +92,7 @@ class Object {
 
 class String
 	public String toString() {}	문자열
-	public int hashCode() {}	10진수 (믿으면 안됨) - 문자열은 무한대로 표기가 되서 10진수 표기가 안된다. 
+	public int hashCode() {}	10진수 (믿으면 안됨) - 표기할 수 있는 문자열은 무한대이기 때문에 표기가 되서 10진수 표기할 수 없다.. 
 	public boolean equals(Object ob){}	문자열 비교
 
 
