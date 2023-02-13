@@ -1,7 +1,7 @@
 package abstract_;
 
-public class AbstractTest {	//POJO	(Plain Old Java Object)
-	private String name;
+public abstract class AbstractTest {	//POJO	(Plain Old Java Object)
+	protected String name;
 	
 	public AbstractTest() {
 		
@@ -17,8 +17,10 @@ public class AbstractTest {	//POJO	(Plain Old Java Object)
 		return name;
 	}
 
-	public void setName(String name) {	// 구현
-		this.name = name;
-	}
+//	public void setName(String name) {	// 구현
+//		this.name = name;
+//	}
+	
+	public abstract void setName(String name); // 추상메소드
 	
 }
