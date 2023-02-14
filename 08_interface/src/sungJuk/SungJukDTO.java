@@ -1,12 +1,12 @@
 package sungJuk;
 
-public class SungJukVDTO {	//1인분
+public class SungJukDTO {	//1인분
 	private int no;	//번호
 	private String name;	//이름
 	private int kor, eng, math, tot;	//국어, 영어, 수학, 총점
 	private double avg;	// 평균
 	
-	public SungJukVDTO(int no, String name, int kor, int eng, int math) {
+	public SungJukDTO(int no, String name, int kor, int eng, int math) {
 		this.no = no;
 		this.name = name;
 		this.kor = kor;
@@ -75,7 +75,10 @@ public class SungJukVDTO {	//1인분
 		this.avg = avg;
 	}
 	
-	
+	@Override
+		public String toString() {
+			return no + "\t" + name + "\t" + kor + "\t" + eng + "\t" + math + "\t" + tot + "\t" + avg;
+		}
 	
 	
 }

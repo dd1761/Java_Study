@@ -1,12 +1,19 @@
 package sungJuk;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SungJukService {
-	Scanner scanner = new Scanner(System.in);
-	SungJuk sungJuk = null;
+
+	private ArrayList<SungJukDTO> arrayList = new ArrayList<SungJukDTO>();
+	
+	
+	
 
 	public void menu() {
+		Scanner scanner = new Scanner(System.in);
+		SungJuk sungJuk = null;
+		int num;
 
 		while (true) {
 			System.out.println();
@@ -20,7 +27,7 @@ public class SungJukService {
 			System.out.println("***************");
 			System.out.print("번호 입력 : ");
 			
-			int num = scanner.nextInt();
+			num = scanner.nextInt();
 			
 			if (num == 6) {
 				break;
@@ -38,7 +45,7 @@ public class SungJukService {
 				System.out.println("1 ~ 6번만 입력해주세요");
 				continue;
 			}
-			sungJuk.execute();
+			sungJuk.execute(arrayList);
 		}
 
 	}
