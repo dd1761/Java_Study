@@ -18,6 +18,6 @@ private int x, y;
 
 	@Override
 	public void disp() {
-		System.out.println(x + " / " + y + " = " + (x / y));
+		System.out.println(x + " / " + y + " = " + String.format("%.2f",((double)x / y)));
 	}
 }
