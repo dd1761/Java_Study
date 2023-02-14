@@ -3,78 +3,73 @@ package abstract_;
 import java.util.Calendar;
 import java.util.Scanner;
 
-class CalendarEx{
-	private int year;
-	private int month;
-	protected Calendar cal = Calendar.getInstance();
-	private int dayOfWeek;
-	private int end;
-	Scanner scanner = new Scanner(System.in);
-	
-	
-	public CalendarEx() {
-		
-		System.out.print("년도 입력 : ");
-		year = scanner.nextInt();
-		
-		System.out.print("월 입력 : ");
-		month = scanner.nextInt();
-		
-		this.year = year;
-		this.month = month;
-		
-		calc(year, month);
-	    display();
+class CalendarEx {
+    private int year; // 년도
+    private int month; // 월
+    protected Calendar cal = Calendar.getInstance(); // Calendar 객체
+    private int dayOfWeek; // 요일
+    private int end; // 마지막 일자
+    Scanner scanner = new Scanner(System.in); // 입력값을 받을 Scanner 객체
 
-	}
-	
-	public void calc (int year, int month) {
-		cal.set(Calendar.YEAR, year); //입력받은 년도로 세팅
-		cal.set(Calendar.MONTH, month); //입력받은 월로 세팅
-		
+    public CalendarEx() {
 
-		cal.set(year,month-1,1); //입력받은 월의 1일로 세팅
-        //month는 0이 1월이므로 -1을 해준다
-		Calendar cal = Calendar.getInstance();
-        cal.set(Calendar.YEAR, year);
-        cal.set(Calendar.MONTH, month - 1);
+        System.out.print("년도 입력 : ");
+        year = scanner.nextInt(); // 년도 입력 받음
 
+        System.out.print("월 입력 : ");
+        month = scanner.nextInt(); // 월 입력 받음
 
+        this.year = year;
+        this.month = month;
 
-        cal.set(year, month - 1, 1);
-        end = cal.getActualMaximum(Calendar.DATE);
-        dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-	}
-	
-	public void display() {
+        calc(year, month); // 입력받은 년월을 이용해 계산
+        display(); // 결과 출력
 
+    }
+
+    public void calc(int year, int month) {
+        cal.set(Calendar.YEAR, year); // 입력받은 년도로 세팅
+        cal.set(Calendar.MONTH, month); // 입력받은 월로 세팅
+
+        cal.set(year, month - 1, 1); // 입력받은 월의 1일로 세팅
+        // month는 0이 1월이므로 -1을 해준다
+
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.YEAR, year); // 입력받은 년도로 세팅
+        cal.set(Calendar.MONTH, month - 1); // 입력받은 월로 세팅
+
+        cal.set(year, month - 1, 1); // 입력받은 월의 1일로 세팅
+        end = cal.getActualMaximum(Calendar.DATE); // 입력받은 월의 마지막 일자
+        dayOfWeek = cal.get(Calendar.DAY_OF_WEEK); // 입력받은 월의 첫 주의 요일
+    }
+
+    public void display() {
         System.out.println("일  월  화  수  목  금  토");
         for (int i = 1; i <= end; i++) {
             if (i == 1) {
                 for (int j = 1; j < dayOfWeek; j++) {
-                    System.out.print("   ");
+                    System.out.print("   "); // 첫 주의 시작일까지 공백 출력
                 }
             }
             if (i < 10) {
-                System.out.print(" ");
+                System.out.print(" "); // 1~9일까지는 한자리수로 출력하기 위해 공백 추가
             }
-            System.out.print(i + " ");
+            System.out.print(i + " "); // 일자 출력
             if (dayOfWeek % 7 == 0) {
-                System.out.println();
+                System.out.println(); // 한 주가 끝나면 줄바꿈
             }
             dayOfWeek++;
         }
         System.out.println();
-
     }
 
 }
 
 public class CalendarMain {
-	
-	public static void main(String[] args) {
-	    CalendarEx ce = new CalendarEx();
-	}
+
+    public static void main(String[] args) {
+        CalendarEx ce = new CalendarEx(); // CalendarEx 객체 생성
+    }
 
 }
 

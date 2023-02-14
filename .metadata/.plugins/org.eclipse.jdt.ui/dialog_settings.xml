@@ -39,6 +39,7 @@
 		<item key="updateTextualMatches" value="false"/>
 		<item key="updateQualifiedNames" value="false"/>
 		<item key="patterns" value="*"/>
+		<item key="renameSubpackages" value="false"/>
 	</section>
 	<section name="OverrideMethodDialog">
 		<item key="showtypes" value="true"/>
@@ -72,5 +73,8 @@
 	</section>
 	<section name="ClasspathContainerSelectionPage">
 		<item key="index" value="3"/>
+	</section>
+	<section name="JavaEditorCodeMiningConfigurationBlock">
+		<item key="expanded0" value="true"/>
 	</section>
 </section>
