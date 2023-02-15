@@ -9,18 +9,17 @@ class CalendarEx {
     protected Calendar cal = Calendar.getInstance(); // Calendar 객체
     private int dayOfWeek; // 요일
     private int end; // 마지막 일자
+    
     Scanner scanner = new Scanner(System.in); // 입력값을 받을 Scanner 객체
 
     public CalendarEx() {
 
         System.out.print("년도 입력 : ");
-        year = scanner.nextInt(); // 년도 입력 받음
+        this.year = scanner.nextInt(); // 년도 입력 받음
 
         System.out.print("월 입력 : ");
-        month = scanner.nextInt(); // 월 입력 받음
+        this.month = scanner.nextInt(); // 월 입력 받음
 
-        this.year = year;
-        this.month = month;
 
         calc(year, month); // 입력받은 년월을 이용해 계산
         display(); // 결과 출력
