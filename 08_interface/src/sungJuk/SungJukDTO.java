@@ -1,6 +1,10 @@
 package sungJuk;
 
-public class SungJukDTO {	//1인분
+import java.util.Comparator;
+
+
+
+public class SungJukDTO implements Comparable<SungJukDTO> {	//1인분
 	private int no;	//번호
 	private String name;	//이름
 	private int kor, eng, math, tot;	//국어, 영어, 수학, 총점
@@ -79,6 +83,19 @@ public class SungJukDTO {	//1인분
 		public String toString() {
 			return no + "\t" + name + "\t" + kor + "\t" + eng + "\t" + math + "\t" + tot + "\t" + avg;
 		}
+
+	@Override
+	public int compareTo(SungJukDTO dto) {
+		//age로 오름차순
+		if(this.tot > dto.tot) {
+			return -1;
+		}else if(this.tot < dto.tot) {
+			return 1;
+		}else {
+			return 0;			
+		}
+	}
 	
+
 	
 }

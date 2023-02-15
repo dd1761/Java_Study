@@ -40,7 +40,7 @@ public class SungJukService {
 			} else if (num == 4) {
 				sungJuk = new SungJukDelete();
 			} else if (num == 5) {
-				
+				sungJuk = new SungJukSort();
 			}else {
 				System.out.println("1 ~ 6번만 입력해주세요");
 				continue;

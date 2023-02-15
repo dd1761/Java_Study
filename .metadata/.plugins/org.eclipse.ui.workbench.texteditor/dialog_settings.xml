@@ -6,17 +6,25 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="this"/>
+		<item key="selection" value="list"/>
 		<list key="findhistory">
+			<item value="package nested;"/>
+			<item value="ar"/>
+			<item value="list"/>
+			<item value="coll"/>
+			<item value="/"/>
 			<item value="this"/>
 			<item value="train"/>
 			<item value="usernumber"/>
 		</list>
 		<list key="replacehistory">
+			<item value="list"/>
+			<item value="set"/>
+			<item value="\"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="807"/>
+		<item key="DIALOG_X_ORIGIN" value="645"/>
 		<item key="DIALOG_Y_ORIGIN" value="268"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
