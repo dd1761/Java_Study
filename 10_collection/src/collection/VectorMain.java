@@ -3,6 +3,9 @@ package collection;
 import java.util.Iterator;
 import java.util.Vector;
 
+// Vector 클래스
+// 1. Vector 클래스는 List 인터페이스를 구현한 클래스
+// 2. Vector 클래스는 배열을 이용하여 데이터를 저장
 
 public class VectorMain {
 
