@@ -19,7 +19,6 @@ public class SungJukList implements SungJuk{
 					 			+ arrayList.get(i).getAvg() + "\t");
 		}
 		
-		
 		for(SungJukDTO  sungJukDTO : arrayList) {
 			System.out.println(sungJukDTO.getNo() + "\t" 
 		 						+ sungJukDTO.getName() + "\t"
@@ -28,6 +27,7 @@ public class SungJukList implements SungJuk{
 		 						+ sungJukDTO.getMath() + "\t"
 		 						+ sungJukDTO.getTot() + "\t"
 		 						+ sungJukDTO.getAvg() + "\t");
+		 						
 		}*/
 		
 		for(SungJukDTO  sungJukDTO : arrayList) {
