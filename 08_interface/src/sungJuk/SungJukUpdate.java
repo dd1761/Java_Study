@@ -21,7 +21,7 @@ public class SungJukUpdate implements SungJuk {
 			if(sungJukDTO.getNo() == no) {
 				sw = 1;
 				
-				
+				//
 				System.out.println(sungJukDTO);
 				
 				System.out.println();
