@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="list"/>
+		<item key="selection" value="Member"/>
 		<list key="findhistory">
+			<item value="SungJuk"/>
+			<item value="sungJuk"/>
 			<item value="package nested;"/>
 			<item value="ar"/>
 			<item value="list"/>
@@ -18,6 +20,8 @@
 			<item value="usernumber"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Member"/>
+			<item value="member"/>
 			<item value="list"/>
 			<item value="set"/>
 			<item value="\"/>
