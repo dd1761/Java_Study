@@ -14,7 +14,7 @@ public class MethodTest02 {
 		Random r = new Random();	// java.util안에 있는 Random을  import시켜준다.
 		double b = r.nextDouble();
 		System.out.println("난수 = " + b); //난수 = 0.7474797056181735
-		
+		// 커밋
 		int[] ar = new int[5];	//배열	ar[0]부터 ar[4]까지 5개를 만든다.
 		ar[0] = 25;
 		ar[1] = 13;
