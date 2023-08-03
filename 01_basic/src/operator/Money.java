@@ -7,6 +7,7 @@ public class Money {
 
 	public static void main(String[] args) {
 //		int money = 5378;
+		//commit
 		
 		int money;
 		
